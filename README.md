@@ -1,3 +1,1 @@
-### Frontend : 김별
-
-### Backend : 정혜나
+### Frontend : 김별, 김진아, 임수연
