@@ -10,7 +10,7 @@ ${reset}
 }
 body{
     font-family:"Pretendard";
-    background-color:white;
+    background-color:black;
 }
 ::-webkit-scrollbar{
     display:none;

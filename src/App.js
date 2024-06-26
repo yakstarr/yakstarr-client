@@ -9,7 +9,7 @@ function App() {
   );
 }
 const AppContainer = styled.div`
-  width: 376px;
+  width: 450px;
   height: 100vh;
   overflow: scroll;
   margin: 0 auto;

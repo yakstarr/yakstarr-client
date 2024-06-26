@@ -1,38 +1,29 @@
 import styled from "styled-components";
-export const DisplayMd = styled.div`
-  color: var(--text-text-primary, #202020);
-  font-feature-settings: "dlig" on;
 
-  /* Display/bold-md */
-  font-family: "Cabinet Grotesk";
-  font-size: 16px;
+export const Body1 = styled.div`
+  font-family: Pretendard;
+  color: ${(props) =>
+    props.color ||
+    "#000000"}; //color를 props으로 넘겨주지 않을시 (undefind) 기본값은 검은색
+  font-size: 1.5rem;
+  font-weight: 400;
   font-style: normal;
-  font-weight: 700;
-  line-height: normal;
+  line-height: 100%;
+  padding: ${(props) => props.padding || ""};
+  margin: ${(props) => props.margin || ""};
+  text-decoration-line: ${(props) => props.underline && "underline"};
 `;
 
-export const BodyMediumXs = styled.div`
-  overflow: hidden;
-  color: var(--text-text-secondary, #7c7c7c);
-  text-align: right;
-  font-feature-settings: "dlig" on;
-  text-overflow: ellipsis;
-
-  /* Body/medium-xs */
+export const Body2 = styled.div`
   font-family: Pretendard;
-  font-size: 12px;
+  color: ${(props) =>
+    props.color ||
+    "#000000"}; //color를 props으로 넘겨주지 않을시 (undefind) 기본값은 검은색
+  font-size: 1.2rem;
+  font-weight: 400;
   font-style: normal;
-  font-weight: 500;
-  line-height: 150%; /* 18px */
-`;
-export const BodyBoldMd = styled.div`
-  color: var(--text-text-primary, #202020);
-  font-feature-settings: "dlig" on;
-
-  /* Body/bold-md */
-  font-family: Pretendard;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
+  line-height: 100%;
+  padding: ${(props) => props.padding || ""};
+  margin: ${(props) => props.margin || ""};
+  text-decoration-line: ${(props) => props.underline && "underline"};
 `;
